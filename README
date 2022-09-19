@@ -1,3 +1,11 @@
+1.打开terminal
+2.conda env list查看现有虚拟环境，若没有ColNet，则转3，否则4
+3.1.conda create -n ColNet python=2.7  
+3.2.conda activate ColNet
+3.3 pip install requests sparql-client==2.6.0 sklearn
+3.4 conda install tensorflow-gpu=1.9.0 gensim=3.4.0 Pattern
+3.5.python; import tensorflow as tf; print(tf.test.is_gpu_available())查看是否配置GPU成功
+4.conda activate ColNet
 Our software settings:
     python 2.7
     tensorflow 1.9.0
